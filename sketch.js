@@ -17,10 +17,14 @@ function draw() {
   rect(-width/2,-height/2,displayWidth,displayHeight);
   textSize(32);
   fill(0,200,0);
-  xx= radius * cos(radians(frameCount%360));
-  yy= radius * sin(radians(frameCount%360));
-  text(s,xx,yy);
-  text(s,-xx,-yy);
+  xx1= radius * cos(radians(frameCount%360));
+  yy1= radius * sin(radians(frameCount%360));
+  xx2= radius * cos(radians(frameCount%360)+(PI/2));
+  yy2= radius * sin(radians(frameCount%360)+(PI/2));
+  text(s,xx1,yy1);
+  text(s,-xx1,-yy1);
+  text(s,xx2,yy2);
+  text(s,-xx2,-yy2);
 //   text(s,-xx,yy);
 //   text(s,xx,-yy);
   //ellipse(0,0,10,50);
