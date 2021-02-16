@@ -8,7 +8,9 @@ function setup() {
 
 
 function draw() {
-  //background(200);
+  if(frameCount%500==0){
+    background(0);
+  }
   translate(width/2,height/2);
   noStroke();
   fill(0,40);
