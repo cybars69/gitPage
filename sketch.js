@@ -19,8 +19,8 @@ function draw() {
   yy= radius * sin(radians(frameCount%360));
   text(s,xx,yy);
   text(s,-xx,-yy);
-  text(s,-xx,yy);
-  text(s,xx,-yy);
+//   text(s,-xx,yy);
+//   text(s,xx,-yy);
   //ellipse(0,0,10,50);
   
 }
