@@ -26,8 +26,8 @@ function draw() {
     }
     varx = map(noise(xOff), 0, 1, -width / 10, width * 1.1);
     vary = map(noise(yOff), 0, 1, -height / 10, height * 1.1);
-    xOff += 0.008;
-    yOff += 0.008;
+    xOff += 0.0087;
+    yOff += 0.0085;
     strokeWeight(1);
     // fill(random(50,200),random(50,200),random(50,200));
     fill(random(80, 200), random(80, 200), random(80, 200))
@@ -36,7 +36,7 @@ function draw() {
     if (frameCount % 3 == 0) {
         radius += inc;
     }
-    if (radius > 60 || radius < 5) {
+    if (radius > 60 || radius < 10) {
         inc *= -1;
     }
 }
