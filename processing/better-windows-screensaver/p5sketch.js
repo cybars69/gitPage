@@ -1,6 +1,6 @@
 var xOff = 0;
 var yOff = 40;
-var inc = 1;
+var inc = -1;
 var radius = 20;
 var capFrame = 0;
 var size;
@@ -36,7 +36,7 @@ function draw() {
     if (frameCount % 3 == 0) {
         radius += inc;
     }
-    if (radius > 80 || radius < 15) {
+    if (radius > 60 || radius < 5) {
         inc *= -1;
     }
 }
